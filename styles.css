@@ -1,9 +1,38 @@
-main{
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(28, 28, 63);
+    width: 100%;
+    min-height: 100vh;
+}
+
+footer{
+    color:rgb(224, 197, 231);
+}
+
+a {
+    text-decoration: none;  
+    color: inherit; 
+}
+
+.header-texts{
+    font-size: 50px;
+}
+
+main {
     display: flex;
     flex-direction: column;
-    margin-top: 100px; 
     padding: 20px;
-    color: white;
+    color: rgb(224, 197, 231);
+    background-color: rgb(107, 107, 158);
+    width: 100%;
 }
 
 img {
@@ -15,21 +44,21 @@ img {
 }
 
 .banner-container{
-    position: fixed;
+    position: relative;
     font-size: 30px;
     color:rgb(224, 197, 231);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin:100px;
-    padding: 10px;
-    border: 20;
-    width: 75%;
-    margin-bottom: 50px;
+    margin: 150px;
+    padding: 10%;
+    border: 10%;
+    max-width: 1200px;
 }
 
 header{
     font-size: 20px;
+    font-weight: bold;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -43,6 +72,7 @@ header{
     height: 60px;
     background-color:rgb(28, 28, 63);
     color:rgb(224, 197, 231);
+    z-index: 1000;
 }
 
 ul{
@@ -57,13 +87,4 @@ ul{
     height: 100%;
     padding: 10px;
     border-radius: 10%;
-}
-
-body{
-    display:flex;
-    flex-direction: column;
-    margin:0;
-    padding:20px;
-    border:0;
-    background-color:rgb(28, 28, 63);
 }
