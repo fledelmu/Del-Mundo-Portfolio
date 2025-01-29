@@ -6,16 +6,69 @@
 }
 
 html, body {
-    
-    margin: 0;
-    padding: 0;
+    display:flex;
+    flex-direction: row;
     background-color: rgb(28, 28, 63);
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide-container{
+    position: relative;
+    font-size: 30px;
+    color:rgb(224, 197, 231);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 200px;
+    border: 10%;
+    width: 100%;
+    height: 100vh;
+    gap: 20px;
+    inset: 0;
+    position: absolute
+}
+.slide{
+    display: none;
+    opacity: 0;
+}
+.slide.visible{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    opacity: 1;
+}
+.slide-background2{
+    background-color: rgb(107, 107, 158);
+}
+.slide img{
+    width: 200px;
+    height: 200px;
+    background-image: url("https://placehold.co/200x200");
+    background-size: cover;
+    background-position: center;
 }
 
 footer{
     color:rgb(224, 197, 231);
+    font-size: 30px;
+    font-weight: bold;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #808080;
+    width: 100%;
+    position: fixed;
+    bottom: 0; 
+    left: 0; 
+    height: 60px;
+    background-color:rgb(28, 28, 63);
+    z-index: 1000;
 }
 
 a {
@@ -27,66 +80,18 @@ a {
     font-size: 50px;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    color: rgb(224, 197, 231);
-    background-color: rgb(107, 107, 158);
-    width: 100%;
-}
 .info{
     display: flex;
     flex-direction: row;
 }
 
-img {
-    width: 200px;
-    height: 200px;
-    background-image: url("https://placehold.co/200x200");
-    background-size: cover;
-    background-position: center;
-}
-
-.banner-container{
-    position: relative;
-    font-size: 30px;
-    color:rgb(224, 197, 231);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 150px;
-    padding: 10%;
-    border: 10%;
-    max-width: 1200px;
-}
-
-header{
-    font-size: 20px;
-    font-weight: bold;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #808080;
-    width: 100%;
-    position: fixed;
-    top: 0; 
-    left: 0; 
-    height: 60px;
-    background-color:rgb(28, 28, 63);
-    color:rgb(224, 197, 231);
-    z-index: 1000;
-}
-
 ul{
     display:flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     list-style-type: none;
     margin: 0;
     padding: 0 50px;
-    gap: 5px;
+    gap: 50px;
 }
 .nav-buttons{
     height: 100%;

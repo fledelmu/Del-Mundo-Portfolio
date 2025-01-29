@@ -7,47 +7,53 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-            <div>Del Mundo Portfolio</div>
-            <nav>
-                <ul>
-                    <li class="nav-buttons"><a href="#contact">Contacts</a></li>
-                    <li class="nav-buttons"><a href="#about">About</a></li>
-                    <li class="nav-buttons"><a href="#home">Home</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section class="banner-container" id="home">
-            <div>
+        <main class="slide-container" >
+            <section class="slide visible" id="home">
+                
                 <h1>Hi I'm <span style="font-size: 55px; text-decoration: underline">Francis Del Mundo</span></h1>
                 <h2>A Computer Science Major</h2>   
-            </div>
-            <div> 
-                <img>
-            </div>
-        </section>
-        <main>
-            <h1 class="header-texts">About me</h1>
-            <section id="about" class="info">
+                     
                 
+                <img>
+                
+            </section>
+
+            <section class="slide">
+                <h1  id="projects" class="header-texts">About me</h1>
                 <p>I am a second year computer science student at Mapua Malayan Colleges Mindanao</p>
                 <p>I was very interested in doing coding</p>
             </section>
 
-            <h1 class="header-texts">Certificates</h1>
-            <section>
-                <p>Mga linkedIn ra guro</p>
-                <p>and that one data science cert</p>
-            </section>
-
-            <h1 class="header-texts">Projects</h1>
-            <section >
+            
+            <section class="slide">
+                <h1 id="projects" class="header-texts">Projects</h1>
                 <p>Past projects kang sir baste</p>
                 <p>proglang</p>
             </section>
+
+            
+            <section class="slide">
+                <h1 id="certificates" class="header-texts">Certificates</h1>
+                <p>Mga linkedIn ra guro</p>
+                <p>and that one data science cert</p>
+            </section>
+            
+            <section class="slide">
+                <h1>Contact me!</h1>
+            </section>
         </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li class="nav-buttons"><a href="#home">Home</a></li>
+                    <li class="nav-buttons"><a href="#about">About</a></li>
+                    <li class="nav-buttons"><a href="#projects">Projects</a></li>
+                    <li class="nav-buttons"><a href="#certificates">Credentials</a></li>
+                    <li class="nav-buttons"><a href="#contacts">Contact me!</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <script src="script.js"></script>
     </body>
-    <footer>
-        <h1 id="contact">Contact me @</h1>
-    </footer>
+    
 </html>
