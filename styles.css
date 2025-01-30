@@ -16,7 +16,7 @@ html, body {
 }
 
 .slide-container{
-    position: relative;
+    position: absolute;
     font-size: 30px;
     color:rgb(224, 197, 231);
     display: flex;
