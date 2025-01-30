@@ -12,9 +12,11 @@ function cycleSlide(index) {
     currSlide.forEach((slide, i) => {
         if (i === index){
             if(i % 2 === 0){
-                slideContainer.classList.add('slide-background2');
+                slideContainer.classList.add('alt-slide');
+                slideContainer.classList.add('alt-slide-content');
             } else {
-                slideContainer.classList.remove('slide-background2');
+                slideContainer.classList.remove('alt-slide');
+                slideContainer.classList.remove('alt-slide-content');
             }
             slide.classList.add('visible');
         } else {
