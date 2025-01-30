@@ -10,7 +10,7 @@
         <main class="slide-container" >
             <section class="slide visible" id="home">
                 <h1>Hi I'm <br><span style="font-size: 55px; text-decoration: underline">Francis Del Mundo</span></h1>
-                <img>
+                <img class="intro-img">
             </section>
 
             <section class="slide">
@@ -18,31 +18,60 @@
 
                 <div class="slide-content">
                     <p>I am Francis Lucky Emmanuel I. Del Mundo. I am a second year computer science student at Mapua Malayan Colleges Mindanao.
-                        I have a passion in coding and I recently discovered that I also enjoy designing web pages. My goal is to constantly improve my skills
-                        to achieve my end goal of becoming a programmer. 
+                        I have a passion in coding and is very fascinated with automation. Aside from that I also enjoy designing web pages. 
+                        My goal is to constantly improve my skills to achieve my end goal of becoming a programmer. 
                     </p>
                     
                 </div>
                 <div>
-                    <img style="width:300px; height:300px;">
+                    <img style="width:300px; height:300px;" class="intro-img">
                 </div>
             </section>
 
             
             <section class="slide">
-                <h1 id="projects" class="header-texts">Projects</h1>
+                <h1 id="projects" class="header-texts">Featured Projects</h1>
                 <div class="slide-content">
-                    <p>Past projects kang sir baste</p>
-                    <p>proglang</p>
+                    <div class="project-preview" id="project1">
+                        <img class="preview-img">
+
+                        <h3>Turtle Eats</h3>
+                        <button onclick="showProject(1)" id="button1">Check It Out!</button>
+                        <div class="project-details">
+                            <p>A project from first year in alignment with SDG 8 where you can play as a turtle and avoid straws while eating sea grass.</p>
+                        </div>
+                    </div> 
+                    <div class="project-preview" id="project2">
+                        <img class="preview-img">
+
+                        <h3>Agrister</h3>
+                        <button onclick="showProject(2)" id="button2">Check It Out!</button>  
+                        <div class="project-details">
+                            <p>This is my first time using SQL and this application was designed as an inventory management system for farms hence "Agrister" because 
+                            "agriculture" + "register".</p>
+                        </div>  
+                    </div>
+                    <div class="project-preview" id="project3">
+                        <img class="preview-img">
+
+                        <h3>Vocably!</h3>    
+                        <button onclick="showProject(3)" id="button3">Check It Out!</button>
+                        <div class="project-details">
+                            <p>A project from first year in alignment with SDG 8 where you can play as a turtle and avoid straws while eating sea grass.</p>
+                        </div>
+                    </div>
                 </div>
-                
             </section>
 
             
             <section class="slide">
                 <h1 id="certificates" class="header-texts">Certificates</h1>
-                <p>Mga linkedIn ra guro</p>
-                <p>and that one data science cert</p>
+                <div class="slide-content">
+                    <img class="preview-img">
+                    <img class="preview-img">
+                    <img class="preview-img">
+                </div>
+                
             </section>
             
             <section class="slide">

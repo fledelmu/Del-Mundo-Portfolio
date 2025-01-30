@@ -18,7 +18,6 @@ html, body {
 .slide-container{
     position: absolute;
     font-size: 30px;
-    color:rgb(224, 197, 231);
     display: flex;
     justify-content: center;
     align-content: center;
@@ -56,15 +55,48 @@ html, body {
     background-color: rgb(103, 197, 234);   
 }
 .slide-content{
-    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
     font-size: 25px;
     text-align: justify;
     background-color: rgb(158, 218, 239);
     padding: 30px;
+    gap: 100px;
     border-radius: 5%;
     color:rgb(28, 28, 63);
 }
-.slide img{
+.slide button{
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5%;
+    border: 0px;
+    background-color:rgb(65, 165, 215);
+}
+.project-preview{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 0;
+}
+.project-details{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 0;
+    max-height: 400px;
+    overflow-y: hidden;
+}
+.show {
+    display: flex;
+}
+.hide{
+    display: none;
+}
+
+.intro-img{
     width: 500px;
     height: 500px;
     background-image: url("images/pic.jpg");
@@ -72,9 +104,21 @@ html, body {
     background-position: center;
     border-radius: 50%;
 }
-
+.preview-img{
+    width: 300px;
+    height: 300px;
+    background-image: url("images/pic.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.cert-img{
+    width: 300px;
+    height: 300px;
+    background-image: url("images/pic.jpg");
+    background-size: cover;
+    background-position: center;
+}
 footer{
-    color:rgb(224, 197, 231);
     font-size: 30px;
     font-weight: bold;
     display:flex;
@@ -82,7 +126,6 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    background-color: #808080;
     width: 100%;
     position: fixed;
     bottom: 0; 
@@ -91,6 +134,10 @@ footer{
     background-color:rgb(65, 165, 215);
     z-index: 1000;
 }
+.mouse-hover{
+    background-color:rgb(100, 202, 253);
+}
+
 
 a {
     text-decoration: none;  
@@ -112,10 +159,13 @@ ul{
     list-style-type: none;
     margin: 0;
     padding: 0 50px;
-    gap: 50px;
+    gap: 5px;
 }
 .nav-buttons{
     height: 100%;
     padding: 10px;
-    border-radius: 10%;
+    font-size: 15px;
+}
+.enlarge-font{
+    font-size: 30px;
 }
