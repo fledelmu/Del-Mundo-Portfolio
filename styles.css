@@ -23,13 +23,12 @@ html, body {
     justify-content: center;
     align-content: center;
     margin: 0 auto;
-    padding: 200px;
+    padding: 300px;
     border: 10%;
     width: 100%;
     height: 100vh;
     gap: 20px;
     inset: 0;
-    position: absolute
 }
 .slide{
     position: absolute; 
@@ -64,9 +63,6 @@ html, body {
     padding: 30px;
     border-radius: 5%;
     color:rgb(28, 28, 63);
-}
-.alt-slide-content{
-    background-color: rgb(65, 165, 215);
 }
 .slide img{
     width: 500px;
