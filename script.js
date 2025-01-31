@@ -89,6 +89,6 @@ function goBack(id){
 
     
     const currButton = document.getElementById(`button${id}`);
-    currButton.textContent = "Check It Out!";
+    currButton.textContent = "Details";
     currButton.setAttribute('onclick', `showProject(${id})`);
 }
